@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHWebImage.h"
 
 @interface UIImageView (XHWebImage)
+
+- (id)initWithImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder;
+
+- (id)initWithImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder imageRoundRadius:(CGFloat)radius;
+
+- (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder;
+
+- (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder imageRoundRadius:(CGFloat)radius;
+
+- (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder imageRoundRadius:(CGFloat)radius completeHandler:(XHWebImageCompleteHandler)completeBlock progressHandler:(XHWebImageProgressHandler)progressBlock;
 
 @end

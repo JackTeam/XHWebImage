@@ -21,6 +21,7 @@
 		ABDB994E18A6DAA000607E6B /* XHWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB994D18A6DAA000607E6B /* XHWebImageTests.m */; };
 		ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */; };
 		ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995C18A6E2FE00607E6B /* XHWebImageOperation.m */; };
+		ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageManager.m; sourceTree = "<group>"; };
 		ABDB995B18A6E2FE00607E6B /* XHWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImageOperation.h; sourceTree = "<group>"; };
 		ABDB995C18A6E2FE00607E6B /* XHWebImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageOperation.m; sourceTree = "<group>"; };
+		ABDB995E18A6E33D00607E6B /* XHWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImageCache.h; sourceTree = "<group>"; };
+		ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */,
 				ABDB995B18A6E2FE00607E6B /* XHWebImageOperation.h */,
 				ABDB995C18A6E2FE00607E6B /* XHWebImageOperation.m */,
+				ABDB995E18A6E33D00607E6B /* XHWebImageCache.h */,
+				ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -261,6 +266,7 @@
 				ABDB993918A6DAA000607E6B /* AppDelegate.m in Sources */,
 				ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */,
 				ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */,
+				ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */,
 				ABDB993518A6DAA000607E6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

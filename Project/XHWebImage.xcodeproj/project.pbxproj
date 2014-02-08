@@ -22,6 +22,7 @@
 		ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */; };
 		ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995C18A6E2FE00607E6B /* XHWebImageOperation.m */; };
 		ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */; };
+		ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		ABDB995E18A6E33D00607E6B /* XHWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImageCache.h; sourceTree = "<group>"; };
 		ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageCache.m; sourceTree = "<group>"; };
 		ABDB996118A6E3C100607E6B /* XHWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImage.h; sourceTree = "<group>"; };
+		ABDB996218A6E43800607E6B /* UIImageView+XHWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XHWebImage.h"; sourceTree = "<group>"; };
+		ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XHWebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				ABDB995E18A6E33D00607E6B /* XHWebImageCache.h */,
 				ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */,
 				ABDB996118A6E3C100607E6B /* XHWebImage.h */,
+				ABDB996218A6E43800607E6B /* UIImageView+XHWebImage.h */,
+				ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -270,6 +275,7 @@
 				ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */,
 				ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */,
 				ABDB993518A6DAA000607E6B /* main.m in Sources */,
+				ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@
 		ABDB994418A6DAA000607E6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDB992C18A6DAA000607E6B /* UIKit.framework */; };
 		ABDB994C18A6DAA000607E6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABDB994A18A6DAA000607E6B /* InfoPlist.strings */; };
 		ABDB994E18A6DAA000607E6B /* XHWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB994D18A6DAA000607E6B /* XHWebImageTests.m */; };
+		ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		ABDB994918A6DAA000607E6B /* XHWebImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XHWebImageTests-Info.plist"; sourceTree = "<group>"; };
 		ABDB994B18A6DAA000607E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABDB994D18A6DAA000607E6B /* XHWebImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHWebImageTests.m; sourceTree = "<group>"; };
+		ABDB995818A6E2BD00607E6B /* XHWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImageManager.h; sourceTree = "<group>"; };
+		ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		ABDB991C18A6DA9F00607E6B = {
 			isa = PBXGroup;
 			children = (
+				ABDB995718A6E26F00607E6B /* Source */,
 				ABDB992E18A6DAA000607E6B /* XHWebImage */,
 				ABDB994718A6DAA000607E6B /* XHWebImageTests */,
 				ABDB992718A6DA9F00607E6B /* Frameworks */,
@@ -142,6 +146,16 @@
 				ABDB994A18A6DAA000607E6B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABDB995718A6E26F00607E6B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ABDB995818A6E2BD00607E6B /* XHWebImageManager.h */,
+				ABDB995918A6E2BD00607E6B /* XHWebImageManager.m */,
+			);
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABDB993918A6DAA000607E6B /* AppDelegate.m in Sources */,
+				ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */,
 				ABDB993518A6DAA000607E6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +458,7 @@
 				ABDB995318A6DAA000607E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABDB995418A6DAA000607E6B /* Build configuration list for PBXNativeTarget "XHWebImageTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +467,7 @@
 				ABDB995618A6DAA000607E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

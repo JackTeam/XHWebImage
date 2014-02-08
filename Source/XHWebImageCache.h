@@ -11,12 +11,21 @@
 #pragma mark - Cache type
 
 typedef enum {
-    XHWebImageCacheTypeNone,
     XHWebImageCacheTypeMemory,
     XHWebImageCacheTypeDisk
 } XHWebImageCacheType;
 
 @interface XHWebImageCache : NSObject
+
+/**
+ * The maximum length of time to keep an image in the cache, in seconds
+ */
+@property (assign, nonatomic) NSInteger maxCacheAge;
+
+/**
+ * The maximum size of the cache, in bytes.
+ */
+@property (assign, nonatomic) NSUInteger maxCacheSize;
 
 + (instancetype)shareWebImageManager;
 

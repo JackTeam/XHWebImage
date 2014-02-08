@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XHWebImage.h"
 
-@interface XHWebImageOperation : NSOperation
+@interface XHWebImageOperation : NSOperation <NSURLConnectionDelegate>
 
+@property (strong, nonatomic, readonly) NSURLRequest *request;
+
+- (id)initWithRequest:(NSURLRequest *)request completeHandler:(XHWebImageCompleteHandler)completeBlock progressHandler:(XHWebImageProgressHandler)progressBlock;
 @end

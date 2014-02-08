@@ -15,4 +15,15 @@
 #   define DLog(...)
 #endif
 
+// NSError related
+#define XHWebImageErrorDomain               @"XHWebImageErrorDomain"
+#define XHWebImageErrorUrlKey               @"XHWebURL"
+#define XHWebImageErrorHeaderStatusCode     666
+#define XHWebImageErrorConnectionCode       667
+
+// Completion Block
+typedef void (^XHWebImageCompleteHandler)(UIImage *image, NSError *error);
+// Progress Block
+typedef void (^XHWebImageProgressHandler)(NSUInteger currentSize, NSUInteger totalSize);
+
 #endif

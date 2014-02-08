@@ -23,6 +23,7 @@
 		ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995C18A6E2FE00607E6B /* XHWebImageOperation.m */; };
 		ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */; };
 		ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */; };
+		ABDB996818A6F42300607E6B /* UIImage+Rounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996718A6F42300607E6B /* UIImage+Rounded.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		ABDB996118A6E3C100607E6B /* XHWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWebImage.h; sourceTree = "<group>"; };
 		ABDB996218A6E43800607E6B /* UIImageView+XHWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XHWebImage.h"; sourceTree = "<group>"; };
 		ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XHWebImage.m"; sourceTree = "<group>"; };
+		ABDB996618A6F42300607E6B /* UIImage+Rounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rounded.h"; sourceTree = "<group>"; };
+		ABDB996718A6F42300607E6B /* UIImage+Rounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rounded.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				ABDB996118A6E3C100607E6B /* XHWebImage.h */,
 				ABDB996218A6E43800607E6B /* UIImageView+XHWebImage.h */,
 				ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */,
+				ABDB996618A6F42300607E6B /* UIImage+Rounded.h */,
+				ABDB996718A6F42300607E6B /* UIImage+Rounded.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -273,6 +278,7 @@
 				ABDB993918A6DAA000607E6B /* AppDelegate.m in Sources */,
 				ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */,
 				ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */,
+				ABDB996818A6F42300607E6B /* UIImage+Rounded.m in Sources */,
 				ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */,
 				ABDB993518A6DAA000607E6B /* main.m in Sources */,
 				ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */,

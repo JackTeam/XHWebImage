@@ -27,7 +27,7 @@ typedef enum {
  */
 @property (assign, nonatomic) NSUInteger maxCacheSize;
 
-+ (instancetype)shareWebImageManager;
++ (instancetype)shareWebImageCache;
 
 // cache
 /**

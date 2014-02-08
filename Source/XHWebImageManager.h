@@ -23,6 +23,6 @@
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
 @property (weak, nonatomic, readonly) XHWebImageCache *webImageCache;
 
-+ (instancetype)webImageManager;
++ (instancetype)shareWebImageManager;
 
 @end

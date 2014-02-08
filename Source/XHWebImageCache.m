@@ -73,7 +73,7 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
     return self;
 }
 
-+ (instancetype)shareWebImageManager {
++ (instancetype)shareWebImageCache {
     static XHWebImageCache *webImageCache;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

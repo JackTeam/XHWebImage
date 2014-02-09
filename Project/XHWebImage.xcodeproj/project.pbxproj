@@ -24,6 +24,8 @@
 		ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB995F18A6E33D00607E6B /* XHWebImageCache.m */; };
 		ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */; };
 		ABDB996818A6F42300607E6B /* UIImage+Rounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996718A6F42300607E6B /* UIImage+Rounded.m */; };
+		ABDB996B18A6F6E900607E6B /* XHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDB996A18A6F6E900607E6B /* XHRootViewController.m */; };
+		ABDB996D18A6F82A00607E6B /* placeholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ABDB996C18A6F82A00607E6B /* placeholder.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		ABDB996318A6E43800607E6B /* UIImageView+XHWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XHWebImage.m"; sourceTree = "<group>"; };
 		ABDB996618A6F42300607E6B /* UIImage+Rounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rounded.h"; sourceTree = "<group>"; };
 		ABDB996718A6F42300607E6B /* UIImage+Rounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rounded.m"; sourceTree = "<group>"; };
+		ABDB996918A6F6E900607E6B /* XHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRootViewController.h; sourceTree = "<group>"; };
+		ABDB996A18A6F6E900607E6B /* XHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRootViewController.m; sourceTree = "<group>"; };
+		ABDB996C18A6F82A00607E6B /* placeholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,8 @@
 			children = (
 				ABDB993718A6DAA000607E6B /* AppDelegate.h */,
 				ABDB993818A6DAA000607E6B /* AppDelegate.m */,
+				ABDB996918A6F6E900607E6B /* XHRootViewController.h */,
+				ABDB996A18A6F6E900607E6B /* XHRootViewController.m */,
 				ABDB993A18A6DAA000607E6B /* Images.xcassets */,
 				ABDB992F18A6DAA000607E6B /* Supporting Files */,
 			);
@@ -135,6 +142,7 @@
 		ABDB992F18A6DAA000607E6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABDB996C18A6F82A00607E6B /* placeholder.jpeg */,
 				ABDB993018A6DAA000607E6B /* XHWebImage-Info.plist */,
 				ABDB993118A6DAA000607E6B /* InfoPlist.strings */,
 				ABDB993418A6DAA000607E6B /* main.m */,
@@ -255,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDB996D18A6F82A00607E6B /* placeholder.jpeg in Resources */,
 				ABDB993318A6DAA000607E6B /* InfoPlist.strings in Resources */,
 				ABDB993B18A6DAA000607E6B /* Images.xcassets in Resources */,
 			);
@@ -279,6 +288,7 @@
 				ABDB995A18A6E2BD00607E6B /* XHWebImageManager.m in Sources */,
 				ABDB995D18A6E2FE00607E6B /* XHWebImageOperation.m in Sources */,
 				ABDB996818A6F42300607E6B /* UIImage+Rounded.m in Sources */,
+				ABDB996B18A6F6E900607E6B /* XHRootViewController.m in Sources */,
 				ABDB996018A6E33D00607E6B /* XHWebImageCache.m in Sources */,
 				ABDB993518A6DAA000607E6B /* main.m in Sources */,
 				ABDB996418A6E43800607E6B /* UIImageView+XHWebImage.m in Sources */,

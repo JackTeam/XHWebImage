@@ -9,20 +9,22 @@
 #import <Foundation/Foundation.h>
 #import "XHWebImage.h"
 #import "XHWebImageCache.h"
-#import "XHWebImageOperation.h"
 
 #pragma mark - Manager Protocol
 
-@protocol XHWebImageManagerDelegate <NSObject>
+@protocol XHWebImageManagerInterface <NSObject>
 @required
 - (void)downloadImageAtURL:(NSURL *)url completeHandler:(XHWebImageCompleteHandler)completeBlock progressHandler:(XHWebImageProgressHandler)progressBlock;
 @end
 
-@interface XHWebImageManager : NSObject <XHWebImageManagerDelegate>
+
+#pragma mark - Manager
+
+@interface XHWebImageManager : NSObject <XHWebImageManagerInterface>
 
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
 @property (weak, nonatomic, readonly) XHWebImageCache *webImageCache;
 
-+ (instancetype)shareWebImageManager;
++ (XHWebImageManager *)shareWebImageManager;
 
 @end

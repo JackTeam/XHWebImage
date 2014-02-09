@@ -7,6 +7,7 @@
 //
 
 #import "XHWebImageManager.h"
+#import "XHWebImageOperation.h"
 
 @interface XHWebImageManager ()
 
@@ -54,7 +55,7 @@
     }
     
     // Checking for cache
-    UIImage *cachedImage = [self.webImageCache imageFromCacheWithKey:url.relativeString andCacheType:XHWebImageCacheTypeMemory];
+    UIImage *cachedImage = [self.webImageCache imageFromCacheWithKey:url.relativeString andCacheType:XHWebImageCacheTypeDisk];
     
     // Image cached, do not need to go further
     if(cachedImage)

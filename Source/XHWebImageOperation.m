@@ -186,7 +186,7 @@
         self.completeBlock(image, nil);
     
     // Adding image to cache
-    [[XHWebImageCache shareWebImageManager] cacheImage:image                                        withKey:self.request.URL.relativeString andCacheType:XHWebImageCacheTypeDisk];
+    [[XHWebImageCache shareWebImageCache] cacheImage:image                                        withKey:self.request.URL.relativeString andCacheType:XHWebImageCacheTypeDisk];
     
     // Reseting
     self.finished = true;

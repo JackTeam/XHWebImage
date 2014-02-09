@@ -8,6 +8,7 @@
 
 #import "UIImageView+XHWebImage.h"
 #import "XHWebImageManager.h"
+#import "UIImage+Rounded.h"
 
 @implementation UIImageView (XHWebImage)
 
@@ -26,11 +27,10 @@
         if(placeholder)
         {
             [self setImage:placeholder];
-            [self setNeedsLayout];
         }
         
         // Launching downloading
-        [self downloadImageAtUrl:[NSURL URLWithString:url] placeholder:placeholder completeHandler:[self completeBlock] progressHandler:nil];
+        [self downloadImageAtUrl:[NSURL URLWithString:url] placeholder:placeholder completeHandler:[self completeBlockWithImageRoundRadius:radius] progressHandler:nil];
     }
     
     return self;
@@ -41,10 +41,10 @@
 }
 
 - (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder imageRoundRadius:(CGFloat)radius {
-    [self setImageAtUrl:url placeholder:placeholder imageRoundRadius:radius completeHandler:[self completeBlock] progressHandler:nil];
+    [self setImageAtUrl:url placeholder:placeholder completeHandler:[self completeBlockWithImageRoundRadius:radius] progressHandler:nil];
 }
 
-- (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder imageRoundRadius:(CGFloat)radius completeHandler:(XHWebImageCompleteHandler)completeBlock progressHandler:(XHWebImageProgressHandler)progressBlock {
+- (void)setImageAtUrl:(NSString *)url placeholder:(UIImage *)placeholder completeHandler:(XHWebImageCompleteHandler)completeBlock progressHandler:(XHWebImageProgressHandler)progressBlock {
     [self downloadImageAtUrl:[NSURL URLWithString:url] placeholder:placeholder completeHandler:completeBlock progressHandler:progressBlock];
 }
 
@@ -59,7 +59,6 @@
     if(placeholder)
     {
         [self setImage:placeholder];
-        [self setNeedsLayout];
     }
     
     // Launching downloading
@@ -68,7 +67,7 @@
 
 #pragma mark - Blocks
 // Complete block
-- (XHWebImageCompleteHandler)completeBlock
+- (XHWebImageCompleteHandler)completeBlockWithImageRoundRadius:(CGFloat)radius
 {
     // Keeping reference to self, without retaining it.
     __weak UIImageView *wself = self;
@@ -78,13 +77,17 @@
         }
         if(wself && image)
         {
+//            UIImage *roundedImage = nil;
+//            if (radius) {
+//                roundedImage = [UIImage createRoundedRectImage:image size:image.size roundRadius:radius];
+//            } else {
+//                roundedImage = image;
+//            }
             dispatch_async(dispatch_get_main_queue(),
                            ^{
                                if(wself && image)
                                {
                                    [wself setImage:image];
-                                   [wself setNeedsLayout];
-                                   [wself setNeedsUpdateConstraints];
                                }
                            });
         }
